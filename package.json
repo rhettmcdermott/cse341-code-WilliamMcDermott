@@ -2,26 +2,19 @@
   "name": "assignment_1",
   "version": "1.0.0",
   "description": "testing",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "express": "^4.17.3",
-    "mailgun-js": "^0.22.0",
-    "mailgun.js": "^5.0.1",
-    "node-fetch": "^3.2.3",
-    "node-sass": "^7.0.1",
-    "nodemailer": "^6.7.2",
-    "sass": "^1.26.5",
-    "sib-api-v3-sdk": "^8.3.0",
-    "telnyx": "^1.23.0",
-    "textgun": "0.0.11"
+    "express": "^4.17.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o css"
+    "start": "nodemon server.js"
   },
   "author": "William McDermott",
   "license": "ISC",
